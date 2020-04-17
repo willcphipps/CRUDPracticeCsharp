@@ -1,0 +1,12 @@
+@model Dish
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-3">@Model.DishName</h1>
+        <p class="lead">Was created by: @Model.ChefName</p>
+        <hr class="my-2">
+        <p>Was invented: @Model.CreatedAt.ToShortDateString() || @Model.CreatedAt.ToShortTimeString()</p>
+        <p class="lead">
+            <a class="btn btn-secondary btn-md" href="/" role="button">home</a>
+        </p>
+    </div>
+</div>
